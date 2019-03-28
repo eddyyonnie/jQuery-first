@@ -1,4 +1,5 @@
 <div class="container">
+    <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
   <div class="row">
     <div class="col-md-4">
         <app-quote-form (output)='addNewGaol($event)' > </app-quote-form>
@@ -9,7 +10,7 @@
         <div class="row">
           
               <div class="col-md-6" *ngFor='let quote of quotes;let i=index'>
-                  <p>By {{quote.name}}  <span>{{quote.completeDate|timeCount}}</span> days ago</p>
+                  <p>By ~{{quote.name}} :  <span>{{quote.completeDate|timeCount}}</span> days ago</p>
                   <p>"{{quote.description}}"</p>
                   <app-quote-details  *ngIf="quotes.showDescription" [quotes]='quote' ></app-quote-details>
 

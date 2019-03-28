@@ -4,6 +4,7 @@ body{
     background-image:url("https://www.redwallpapers.com/public/redwallpapers-small-thumb/acoustic-black-and-white-classic-free-stock-photo-image-wallpaper.jpeg");
     background-repeat:no-repeat;
     background-size:cover;
+    font-family: 'Courgette', cursive;
 }
 h1{
     color:white;

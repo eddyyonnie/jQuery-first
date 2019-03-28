@@ -9,9 +9,11 @@ import { TimeCountPipe } from '../time-count.pipe'
 })
 export class quotesComponent implements OnInit {
   quotes=[
-    new Quote(1,'brainiac','He who finds a wife finds a good thin',new Date(2019,2,15),0,0),
-    new Quote(2, 'nerd','Money can never buy you happyness',new Date(2019,2,15),0,0),
- 
+    new Quote(1,'Brainiac Steves','He who finds a wife finds a good thin',new Date(2019,2,15),0,0),
+    new Quote(2, 'Nerd Johnson','Money can never buy you happyness',new Date(2019,2,15),0,0),
+    new Quote(3, 'Brightstar Oneil','Love those who live for you and leave those who dont',new Date(2019,2,15),0,0),
+    new Quote(4, 'Hero Kate','Battles are meant to be won unless you are figting the one you love',new Date(2019,2,15),0,0),
+
   ];
   toogleDetails(index){
     this.quotes[index].showDescription=!this.quotes[index].showDescription;
