@@ -7,15 +7,18 @@
     <div class="col-md-8">
       <div class="container">
         <div class="row">
-          
+          <div id="shopper">
               <div class="col-md-6" *ngFor='let quote of quotes;let i=index'>
-                  <p>{{quote.name}} due on <span>{{quote.compleDate|date:'fullDate'|uppercase}}</span> </p>
+                  <p>By {{quote.name}}  <span>{{quote.completeDate|timeCount}}</span> days ago</p>
                   <p>"{{quote.description}}"</p>
+                  <app-quote-details  *ngIf="quotes.showDescription" [quotes]='quote' ></app-quote-details>
+
                   <button (click)=upvote(quote) >upvote {{quote.upvote}}</button>
                   <button (click)=downvote(quote)>downvote {{quote.downvote}}</button>
                   <button (click)='deleteQuote(true,quotes[i])'>delete</button>
                   <hr>
                 </div>
+              </div>
         </div>
       </div>
               
@@ -24,5 +27,4 @@
 </div>
 
 
-<app-quote-details  *ngIf="quotes.showDescription" [quotes]='quote' ></app-quote-details>
 

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Quote } from '../quote';
+import { TimeCountPipe } from '../time-count.pipe'
 
 @Component({
   selector: 'app-quote',
@@ -8,8 +9,15 @@ import { Quote } from '../quote';
 })
 export class quotesComponent implements OnInit {
   quotes=[
-    new Quote(1,"Watch finding Nemo","Find an online Version and watch Merlin",new Date(2019,3,14),0,0),
-   
+    new Quote(1,'brainiac','He who finds a wife finds a good thin',new Date(2019,2,15),0,0),
+    new Quote(2, 'nerd','Money can never buy you happyness',new Date(2019,2,15),0,0),
+    new Quote(3, 'brightstar','Love those who live for you and leave those who dont',new Date(2019,2,15),0,0),
+    new Quote(4, 'hero','Battles are meant to be won unless you are figting the one you love',new Date(2019,2,15),0,0),
+    new Quote(5, 'youngest','Make family your cornerstone and you will have a firm foundation',new Date(2019,2,15),0,0),
+    new Quote(6, 'friends','Fight for what is right and the rest will follow',new Date(2019,2,15),0,0),
+    new Quote(7, 'rexLuther','Let a sinking ship go down on its own that later on it may be resurfaced as treasure',new Date(2019,2,15),0,0),
+    new Quote(8, 'Waren','salvaging through all is what it takes to be worthwhile',new Date(2019,2,15),0,0),
+    new Quote(9, 'Optimist','You are worth much more when you like what you are',new Date(2019,2,15),0,0),
   ];
   toogleDetails(index){
     this.quotes[index].showDescription=!this.quotes[index].showDescription;

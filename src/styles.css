@@ -1,2 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.css";
+body{
+    background-image:url("https://www.redwallpapers.com/public/redwallpapers-small-thumb/acoustic-black-and-white-classic-free-stock-photo-image-wallpaper.jpeg");
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+h1{
+    color:white;
+    font-size:80px;
+}
