@@ -14,6 +14,7 @@
                   <app-quote-details  *ngIf="quotes.showDescription" [quotes]='quote' ></app-quote-details>
 
                   <button class="btn btn-primary" (click)=upvote(quote) >upvote {{quote.upvote}}</button>
+                  <br>
                   <button class="btn btn-primary"(click)=downvote(quote)>downvote {{quote.downvote}}</button>
                   <button class="btn btn-danger"(click)='deleteQuote(true,quotes[i])'>delete</button>
                   <hr>
