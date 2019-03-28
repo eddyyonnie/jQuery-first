@@ -11,4 +11,5 @@ h1{
 }
  .shopper{
     display:flex; 
+    flex-direction:row:
  }
